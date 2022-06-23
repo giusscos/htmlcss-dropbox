@@ -22,8 +22,11 @@ button{
 }
 /* HEADER > NAV */
 .main-header{
-    display: flex;
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
     padding: 27px 18px;
     justify-content: space-between;
 }
