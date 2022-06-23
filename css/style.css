@@ -11,8 +11,9 @@ menu{
     list-style: none;
 }
 a{
-    text-decoration: none;
     color: currentColor;
+    display: inline-block;
+    text-decoration: none;
 }
 img{
     max-width: 100%;
@@ -20,14 +21,40 @@ img{
 button{
     border: 0px solid;
 }
+/* LAYOUT */
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.cta{
+    color: #fff;
+    font-weight: bold;
+    background-color: #0061FF;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.w-30{
+    flex-basis: 30%;
+}
+.w-70{
+    flex-basis: 70%;
+}
 /* HEADER > NAV */
 .main-header{
     position: fixed;
+    z-index: 999;
     top: 0;
     left: 0;
     right: 0;
     display: flex;
     padding: 27px 18px;
+    background-color: #fff;
     justify-content: space-between;
 }
 .nav{
@@ -50,10 +77,39 @@ button{
     font-size: 15px;
     padding: 11px 17px;
 }
-.nav .nav-list .list-link.cta{
-    color: #fff;
-    font-weight: bold;
-    background-color: blue;
+/* MAIN */
+main{
+    padding-top: 80px;
+}
+.jumbo{
+    padding-top: 100px;
+    background-color: #B4D0E7;
+}
+.jumbo .container .row:last-of-type{
+    padding-top: 50px;
+}
+.jumbo-title .title{
+    font-size: 75px;
+}
+.desc-cta{
+    padding: 13px 15px;
+}
+.desc,
+.desc-cta{
+    margin-bottom: 30px;
+}
+.jumbo-downarrow{
+    display: inline-block;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+.jumbo-img__container{
+    position: relative;
+}
+.jumbo-img{
+    position: absolute;
+    top: 0;
 }
 /* DEBUG */
 .debug .main-header{
