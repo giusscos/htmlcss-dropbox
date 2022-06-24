@@ -61,7 +61,7 @@ img{
     flex-basis: 60%;
 }
 .w-70{
-    flex-basis: 70%;
+    flex-basis: calc(100% * 2 / 3);
 }
 .w-80{
     flex-basis: 80%;
