@@ -290,10 +290,11 @@ main{
     padding: 100px 0;
 }
 .partner-wrapper .container-partner__text{
-    padding: 60px 50px 0;
+    padding-top: 60px;
+    padding-left: 50px;
 }
 .partner-wrapper .container-partner__text .title{
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 20px;
 }
 .partner-wrapper .container-partner__text .desc{
