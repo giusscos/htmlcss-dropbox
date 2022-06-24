@@ -10,28 +10,35 @@
         Dropbox
     </title>
 </head>
-<body class="">
+<body>
+    <!-- Header -->
     <header class="main-header">
-        <nav class="nav nav-left">
+        <figure class="nav-img">
             <img src="./img/logo-small.png" alt="logo Dropbox">
+        </figure>
+        <nav class="nav main-nav nav-menu">
             <ul class="nav-list">
                 <li><a class="list-link" href="#">Perch&eacute; Dropbox</a></li>
                 <li><a class="list-link" href="#">Funzioni</a></li>
                 <li><a class="list-link" href="#">Piani e Prezzi</a></li>
             </ul>
         </nav>
-        <nav class="nav nav-right">
+        <menu class="menu nav-menu">
             <ul class="nav-list">
                 <li><a class="list-link" href="#">Supporto</a></li>
                 <li><a class="list-link" href="#">Contatta l&apos;ufficio vendite</a></li>
                 <li><a class="list-link" href="#">Accedi</a></li>
                 <li><a class="list-link cta blue" href="#">Inzia</a></li>
             </ul>
-        </nav>
+        </menu>
     </header>
+    <!-- End Header -->
+    <!-- Main  -->
     <main>
+        <!-- Jumbo section -->
         <section class="jumbo">
             <div class="container">
+                <!-- Jumbo title -->
                 <div class="row">
                     <div class="col">
                         <div class="jumbo-title">
@@ -41,21 +48,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <!-- End Jumbo title -->
+                <!-- Jumbo description -->
+                <div class="row jumbo__row-desc">
                     <div class="col w-30">
                         <div class="jumbo-desc">
                             <p class="desc">
                                 Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business &eacute; un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.
                             </p>
-                            <a class="cta blue desc-cta" href="#">
+                            <a class="cta blue" href="#">
                                 Inizia la prova gratuita
                             </a>
                             <p class="desc">
                                 Annulla in qualsiasi momento
                             </p>
-                            <span class="jumbo-downarrow">
-                                <i class="fa-solid fa-arrow-down"></i>
-                            </span>
+                            <i class="fa-solid fa-arrow-down"></i>
                         </div>
                     </div>
                     <div class="col w-70">
@@ -64,44 +71,54 @@
                         </div>
                     </div>
                 </div>
+                <!-- End Jumbo description -->
             </div>
         </section>
+        <!-- End Jumbo section  -->
+        <!-- Plan section  -->
         <section class="section section-plan">
             <div class="container-small">
-                <div class="sub">
+                <div class="plan">
+                    <!-- Plan title  -->
                     <div class="row">
                         <div class="col">
-                            <div class="sub-title">
+                            <div class="plan-title">
                                 <h1 class="title">
                                     Trova il piano business che fa per te
                                 </h1>
                             </div>
                         </div>
                     </div>
-                    <div class="row sub-select">
+                    <!-- End Plan title  -->
+                    <!-- Plan radio button  -->
+                    <div class="row plan-radio">
                         <div class="col">
-                            <div class="select-container">
-                                <input class="select-radio" id="a" type="radio" checked>
-                                <label for="a">Fatturazione mensile</label>
+                            <div class="radio-container">
+                                <span class="radio-button checked"></span>
+                                Fatturazione mensile
                             </div>
                         </div>
                         <div class="col">
-                            <div class="select-container">
-                                <input class="select-radio" id="b" type="radio">
-                                <label for="b">Fatturazione annuale</label>
+                            <div class="radio-container">
+                                <span class="radio-button"></span>
+                                Fatturazione mensile
                             </div>
                         </div>
                     </div>
-                    <div class="card-container">
-                        <div class="margin-neg row">
-                            <div class="col">
+                    <!-- End Plan radio button  -->
+                    <!-- Card Plan  -->
+                    <div class="card-container container-small">
+                        <div class="row margin-neg">
+                            <!-- Card 1 -->
+                            <div class="col w-30">
                                 <div class="card">
-                                    <div class="card-title">
+                                    <!-- Header Card -->
+                                    <header class="card-header">
                                         <i class="fa-solid fa-user"></i>
-                                        <h5 class="title">
-                                            Singolo
-                                        </h5>
-                                    </div>
+                                        Singolo
+                                    </header>
+                                    <!-- End Header Card -->
+                                    <!-- Card body -->
                                     <div class="card__content">
                                         <div class="card-info">
                                             <h3 class="info-title">
@@ -169,16 +186,16 @@
                                             </ul>
                                         </div>
                                     </div>
+                                    <!-- End Card body -->
                                 </div>
                             </div>
-                            <div class="col">
+                            <!-- Card 2 -->
+                            <div class="col w-30">
                                 <div class="card">
-                                    <div class="card-title">
+                                    <header class="card-header">
                                         <i class="fa-solid fa-users"></i>
-                                        <h5 class="title">
-                                            Team
-                                        </h5>
-                                    </div>
+                                        Team
+                                    </header>
                                     <div class="card__content">
                                         <div class="card-info">
                                             <h3 class="info-title">
@@ -272,16 +289,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
+                            <!-- Card 3 -->
+                            <div class="col w-30">
                                 <div class="card">
-                                    <div class="card-title">
+                                    <header class="card-header">
                                         <i class="fa-solid fa-building"></i>
-                                        <h5 class="title">
-                                            Azienda
-                                        </h5>
-                                    </div>
+                                        Azienda
+                                    </header>
                                     <div class="card__content">
-
                                         <div class="card-info">
                                             <h3 class="info-title">
                                                 Enterprise
@@ -358,11 +373,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="margin-neg row">
+                            <!-- Card 4 -->
                             <div class="col w-100">
                                 <div class="card">
-                                    <div class="card-title">
+                                    <div class="card-header">
                                         <i class="fa-solid fa-building"></i>
                                         <h5 class="title">
                                             Team
@@ -393,6 +407,7 @@
                 </div>
             </div>
         </section> 
+        <!-- Plan section  -->
         <section class="section section-partner">
             <div class="container-small">
                 <div class="row">
@@ -465,7 +480,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row margin-neg features">
+                <div class="row features">
                     <div class="col features-wrapper">
                         <div class="wrapper">
                             <figure class="container-img">
@@ -508,6 +523,21 @@
                 </div>
             </div>
         </section>
+        <section class="section section-client">
+            <div class="container-small">
+                <div class="row">
+                    <div class="col">
+                        <div class="client-wrapper">
+                            <h3 class="title">
+                                Pi&uacute; di 500.000 team utilizzano Dropbox Business
+                            </h3>
+                            <a class="cta-link" href="#">Scopri di pi&uacute; sui nostri clienti</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <!-- End Main  -->
 </body>
 </html>
