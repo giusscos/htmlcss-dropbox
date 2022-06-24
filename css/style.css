@@ -149,7 +149,7 @@ main{
     padding: 50px 30px 50px;
 }
 .card-container .row .col.w-100{
-    flex-basis: 100%
+    flex-basis: 100%;
 }
 .col.w-100 .card .card__content{
     display: flex;
