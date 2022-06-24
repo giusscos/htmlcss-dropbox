@@ -249,11 +249,11 @@ main{
     padding: 10px 0;
     text-align: center;
 }
-.cta-link__alternative{
+.cta-link-wrapper{
     font-size: 14px;
     padding: 35px 0;
 }
-.cta-link__alternative .cta-link{
+.cta-link-alternative{
     color: blue;
     text-decoration: underline;
 }
@@ -303,6 +303,7 @@ main{
 .partner-wrapper .container-partner__text .cta{
     padding: 10px 16px;
 }
+/* FEATURES  */
 .section-features .features{
     padding-top: 75px;
 }
@@ -323,5 +324,14 @@ main{
 }
 .wrapper > .title{
     font-size: 24px;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
+}
+/* CLIENTS */
+.section-client{
+        padding-top: 100px;
+        padding-bottom: 150px;
+}
+.client-wrapper .title{
+    font-size: 40px;
+    padding-bottom: 60px;
 }
