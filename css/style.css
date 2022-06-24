@@ -294,9 +294,30 @@ main{
     margin-bottom: 20px;
 }
 .partner-wrapper .container-partner__text .desc{
-    font-size: 16px;
     margin-bottom: 30px;
 }
 .partner-wrapper .container-partner__text .cta{
     padding: 10px 16px;
+}
+.section-features .features{
+    padding-top: 75px;
+}
+.section-features .row.margin-neg{
+    padding-top: 60px;
+}
+.section-features .row .col{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.features-wrapper > .title{
+    font-size: 36px;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+}
+.wrapper > .title{
+    font-size: 24px;
+    margin-bottom: 40px;
 }
