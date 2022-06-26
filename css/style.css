@@ -19,6 +19,51 @@ img{
     display: block;
     max-width: 100%;
 }
+/* CTA Button */
+.cta{
+    color: #fff;
+    padding: 10px 18px;
+}
+.cta.blue{
+    font-weight: bold;
+    background-color: #0061FF;
+}
+.cta.white{
+    color: #000;
+    background-color: #fff;
+}
+.cta.white-border{
+    color: #000;
+    border-top: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+}
+.cta-link-alternative{
+    color: blue;
+    text-decoration: underline;
+}
+/* End CTA Button */
+/* Radio Button */
+.radio-button{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid #d1d1d1;
+}
+.radio-button.checked{
+    border: 4px solid #0061FF;
+}
+/* End Radio Button */
+/* Check List Plan */
+.check-blue{
+    color: blue;
+    padding-top: 3px;
+}
+/* End Check List Plan */
+/* Color Clients Button */
 .lightgreen{
     background-color: #A2D39B;
 }
@@ -43,6 +88,7 @@ img{
 .gold{
     background-color: #FFD830;
 }
+/* End Color Clients Button */
 /* LAYOUT */
 .container{
     max-width: 1200px;
@@ -53,25 +99,6 @@ img{
 .container,
 .container-small{
     margin: 0 auto;
-}
-.cta{
-    color: #fff;
-    padding: 10px 18px;
-}
-.cta.blue{
-    font-weight: bold;
-    background-color: #0061FF;
-}
-.cta.white{
-    color: #000;
-    background-color: #fff;
-}
-.cta.white-border{
-    color: #000;
-    border-top: 1px solid #bbb;
-    border-right: 1px solid #bbb;
-    border-bottom: 1px solid #000;
-    border-left: 1px solid #000;
 }
 .row{
     display: flex;
@@ -88,10 +115,7 @@ img{
     flex-basis: calc(100% * 2 / 3);
 }
 .w-100{
-    flex-basis: 100%;
-}
-.check-blue{
-    color: blue;
+    flex-basis: calc(100% / 1);
 }
 /* HEADER > NAV */
 .main-header{
@@ -120,7 +144,7 @@ img{
 .nav-list{
     display: flex;
 }
-.nav-list li{
+.nav-menu .nav-list li{
     white-space: nowrap;
 }
 .nav-menu .nav-list .list-link{
@@ -172,16 +196,6 @@ main{
     display: flex;
     align-items: center;
 }
-.radio-button{
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    display: inline-block;
-    border: 1px solid #d1d1d1;
-}
-.radio-button.checked{
-    border: 4px solid #0061FF;
-}
 /* PLAN > CARD */
 .card-container{
     padding-top: 50px;
@@ -193,46 +207,26 @@ main{
     flex-grow: 1;
     flex-basis: 0;
 }
-/*
-.card-container .row .col{
-     padding: 0 25px; 
-    margin-bottom: 50px;
-}
-*/
-.card__content{
-    padding: 50px 30px 50px;
-}
-.col.w-100 .card .card__content{
-    display: flex;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    flex-direction: row;
-}
-.col.w-100 .card .card__content .card-info{
-    margin-bottom: 10px;
-}
-.card .card__content .card-info{
-    flex-basis: 70%;
-    padding-right: 100px;
-}
-.card .card__content .card-cta{
-    flex-basis: 30%;
-}
 .col .card{
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     border: 1px solid #eee;
 }
-.card-header{
+.card .card-header{
     gap: 5px;
     display: flex;
     padding: 13px 0;
-    font-weight: normal;
     align-items: center;
+    font-weight: lighter;
     justify-content: center;
-    border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
+}
+.card__content{
+    padding: 50px 30px 50px;
+}
+.card .card__content .card-info{
+    padding-right: 100px;
 }
 .card-info{
     display: flex;
@@ -240,16 +234,11 @@ main{
     flex-direction: column;
 }
 .card-info .info-price{
-    font-size: 24px;
-}
-.card-info .info-price{
-    font-size: 14px;
     font-weight: bold;
     padding: 23px 0 18px;
 }
 .card-info .info-interval{
-    font-size: 14px;
-    font-weight: 300;
+    font-weight: lighter;
 }
 .card-list__plane-package{
     gap: 13px;
@@ -266,11 +255,11 @@ main{
 }
 .card-list__plane-package > li > i{
     padding-top: 3px;
-}
+} 
 .card-cta{
     display: flex;
-    align-items: flex-start;
     flex-direction: column;
+    align-items: flex-start;
 }
 .card-cta .cta{
     width: 100%;
@@ -278,23 +267,18 @@ main{
     text-align: center;
 }
 .cta-link-wrapper{
-    font-size: 14px;
     padding: 35px 0;
 }
-.cta-link-alternative{
-    color: blue;
-    text-decoration: underline;
-}
 .card-resume::before{
-    height: 2px;
     width: 50px;
+    height: 2px;
     content: '';
     display: block;
     margin-bottom: 35px;
-    background-color: #eee;
+    background-color: #d1d1d8;
 }
 .resume-title{
-    margin-bottom: 35px;
+    padding-bottom: 35px;
 }
 .card-list__resume{
     display: flex;
@@ -305,14 +289,30 @@ main{
 .card-list__resume li{
     gap: 5px;
     display: flex;
-    font-size: 15px;
     margin-bottom: 25px;
     flex-direction: row;
 }
 .info-desc{
-    font-size: 14px;
     padding-top: 50px;
 }
+.info-desc,
+.cta-link-wrapper,
+.card-info .info-price,
+.card-list__resume li,
+.card-info .info-interval{
+    font-size: 14px;
+}
+/* 100% card */
+.col.w-100 .card .card__content{
+    display: flex;
+    padding-top: 30px;
+    flex-direction: row;
+    padding-bottom: 10px;
+}
+.col.w-100 .card .card__content .card-info{
+    margin-bottom: 10px;
+}
+/* End 100% card */
 /* PARTNER */
 .section-partner{
     padding: 100px 0;
@@ -370,11 +370,6 @@ main{
     flex-wrap: wrap;
     aspect-ratio: 1/1;    
     flex-direction: row;
-    flex-basis: calc(100% / 3);
-}
-.square-container.info{
-    flex-direction: column;
-    flex-wrap: nowrap;
 }
 .card-client{
     display: flex;
@@ -389,39 +384,38 @@ main{
     width: 160px;
     filter: invert(1);
 }
-.card-client.active{
-    border: 10px solid #ffffff99;
-}
+.card-client.active,
 .card-client:hover{
     border: 10px solid #ffffff99;
 }
 .card-client-info{
-    height: fit-content;
-    padding-top: 50px;
     padding-left: 50px;
 }
-.card-client-info.logo::after{
-    content: '';
-    display: block;
-    height: 2px;
-    width: 110px;
-    background-color: #d1d1d8;
+.card-client-info.logo{
+    padding-top: 50px;
 }
 .card-client-info img{
     width: 275px;
     margin-bottom: 40px;
 }
+.card-client-info.logo::after{
+    content: '';
+    height: 2px;
+    width: 110px;
+    display: block;
+    background-color: #d1d1d8;
+}
 .card-client-info.desc-container{
-    padding-top: 40px;
     padding-right: 60px;
 }
-.card-client-info.desc-container .desc{
+.card-client-info.desc-container .desc,
+.card-client-info.desc-container .desc-credit{
     padding-bottom: 50px;
 }
 /* CTA client */
 .container-max.client-container{
-    background-color: #B4D0E7;
     padding: 130px 0;
+    background-color: #B4D0E7;
 }
 .client-content{
     display: flex;
