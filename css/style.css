@@ -368,37 +368,45 @@ main{
 }
 .square-container{
     flex-wrap: wrap;
-    aspect-ratio: 1/1;    
+    aspect-ratio: 1/1;
+}
+.square-container.clients{
     flex-direction: row;
+}
+.square-container.info{
+    gap: 40px;
+    padding: 50px;
+    flex-wrap: nowrap;
 }
 .card-client{
     display: flex;
     aspect-ratio: 1/1; 
+    position: relative; 
     align-items: center;
     justify-content: center;
     flex-basis: calc(100% / 2);
-    transition: 0.1s ease-in-out;
-    border: 0px solid #ffffff99;
-}
-.card-client img{
-    width: 160px;
-    filter: invert(1);
-}
-.card-client.active,
-.card-client:hover{
-    border: 10px solid #ffffff99;
 }
 .card-client-info{
-    padding-left: 50px;
+    height: fit-content;
 }
-.card-client-info.logo{
-    padding-top: 50px;
+.card-client img{
+    width: 50%;
+    filter: invert(1);
+}
+.active::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 10px solid #ffffff99;
 }
 .card-client-info img{
-    width: 275px;
-    margin-bottom: 40px;
+    height: 90px;
 }
-.card-client-info.logo::after{
+.card-client-info.desc-container::before{
     content: '';
     height: 2px;
     width: 110px;
@@ -406,11 +414,9 @@ main{
     background-color: #d1d1d8;
 }
 .card-client-info.desc-container{
-    padding-right: 60px;
-}
-.card-client-info.desc-container .desc,
-.card-client-info.desc-container .desc-credit{
-    padding-bottom: 50px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
 }
 /* CTA client */
 .container-max.client-container{
@@ -433,4 +439,27 @@ main{
 }
 .cta-client__link .cta{
     align-self: flex-start;
+}
+/* FAQ */
+.section-faq{
+    padding-bottom: 150px;
+}
+.faq-head{
+    margin-bottom: 60px;
+}
+.faq-head .title{
+    font-size: 40px
+}
+.faq-body{
+    width: 100%;
+    border-top: 2px solid #d1d1d8;
+}
+.faq{
+    display: flex;
+    font-size: 18px;    
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    justify-content: space-between;
+    border-bottom: 2px solid #d1d1d8;
 }
